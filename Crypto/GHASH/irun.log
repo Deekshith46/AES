@@ -1,0 +1,134 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Apr 09, 2019 at 07:16:00 IST
+irun
+	-access +rwc
+	GHASH_TOP.v
+	carry_less_mul_tb.v
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+Recompiling... reason: file './GHASH_TOP.v' is newer than expected.
+	expected: Tue Apr  9 06:00:40 2019
+	actual:   Tue Apr  9 07:15:52 2019
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+ncvlog: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+ncvlog: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 2
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+ncelab: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+ncelab: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+		Caching library 'worklib' ....... Done
+	Top level design units:
+		tb
+	Building instance overlay tables: .................... Done
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		             Instances  Unique
+		Modules:             4       4
+		Registers:           9       9
+		Vectored wires:      4       -
+		Always blocks:       2       2
+		Initial blocks:      2       2
+		Cont. assignments:   0       1
+		Pseudo assignments:  2       2
+	Writing initial simulation snapshot: worklib.tb:v
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+ncsim: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+ncsim: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+Loading snapshot worklib.tb:v .................... Done
+ncsim> source /tools/cadence/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+==============================
+    128-bit Carry-less MUL TB 
+==============================
+
+TEST 1
+x   = 0000000000000000000000000000000f
+y   = 0000000000000000000000000000000b
+reduction_in = 0000000000000000000000000000000000000000000000000000000000000069
+low = 00000000000000000000000000000069
+high = 00000000000000000000000000000000
+temp = 00000000000000000000000000000000
+i = 00000080
+reduction_out = 00000000000000000000000000000069
+out = 00000000000000000000000000000069
+
+TEST 2
+x   = 80000000000000000000000000000000
+y   = 00000000000000010000000000000000
+cmulout = 0000000000000000800000000000000000000000000000000000000000000000
+reduction_in = 0000000000000000800000000000000000000000000000000000000000000000
+low = 00000000000000000000000000000000
+high = 00000000000000008000000000000000
+temp = 00000000000000438000000000000000
+i = 00000080
+reduction_out = 00000000000000438000000000000000
+out = 00000000000000438000000000000000
+
+TEST 3
+x   = 123456789abcdef01122334455667788
+y   = 0f0e0d0c0b0a09080706050403020100
+reduction_in = 00efd2c077afa580226f0183de6cfd86cd80a526fce09442ab44322111678800
+low = cd80a526fce09442ab44322111678800
+high = 00efd2c077afa580226f0183de6cfd86
+temp = 77fffffbffffff91ffffc7efffffff9e
+i = 00000080
+reduction_out = ba7f5add031f6bd354bbf5ceee98779e
+out = ba7f5add031f6bd354bbf5ceee98779e
+
+Simulation complete via $finish(1) at time 30 NS + 0
+./carry_less_mul_tb.v:78         $finish;
+ncsim> exit
+TOOL:	irun(64)	15.20-s051: Exiting on Apr 09, 2019 at 07:16:01 IST  (total: 00:00:01)
