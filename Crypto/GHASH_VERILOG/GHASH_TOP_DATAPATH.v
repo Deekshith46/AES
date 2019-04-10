@@ -1,5 +1,7 @@
 module ghash_top_datapath#(parameter WIDTH = 128)
-                           (input [WIDTH-1:0] h_reg_data,
+                           (input clk,
+                            input rst,
+                            input [WIDTH-1:0] h_reg_data,
                             input h_reg_en,
                             input [WIDTH-1:0] aad_data,
                             input [WIDTH-1:0] cipher_text,

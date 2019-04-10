@@ -1,8 +1,9 @@
 irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
-TOOL:	irun(64)	15.20-s051: Started on Apr 10, 2019 at 06:58:17 IST
+TOOL:	irun(64)	15.20-s051: Started on Apr 10, 2019 at 10:28:35 IST
 irun
 	-access +rwc
 	GHASH_TOP_DATAPATH.v
+	GHASH_TOP_tb.v
 DEFINE gpdk045		$ANALOG/45nm/gpdk045		
 |
 irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
@@ -27,15 +28,9 @@ irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '
 DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
 |
 irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
-DEFINE gpdk045		$ANALOG/45nm/gpdk045		
-|
-irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
-DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
-|
-irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
-Recompiling... reason: file './GHASH_TOP_DATAPATH.v' is newer than expected.
-	expected: Wed Apr 10 06:54:09 2019
-	actual:   Wed Apr 10 06:58:15 2019
+Recompiling... reason: file './GHASH_TOP_tb.v' is newer than expected.
+	expected: Wed Apr 10 10:23:41 2019
+	actual:   Wed Apr 10 10:25:54 2019
 DEFINE gpdk045		$ANALOG/45nm/gpdk045		
 |
 irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
@@ -48,8 +43,8 @@ ncvlog: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied
 DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
 |
 ncvlog: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
-file: GHASH_TOP_DATAPATH.v
-	module worklib.ghash_top_datapath:v
+file: GHASH_TOP_tb.v
+	module worklib.tb:v
 		errors: 0, warnings: 0
 	Total errors/warnings found outside modules and primitives:
 		errors: 0, warnings: 2
@@ -75,16 +70,16 @@ ncelab: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/ho
 	Elaborating the design hierarchy:
 		Caching library 'worklib' ....... Done
 	Top level design units:
-		ghash_top_datapath
+		tb
         .mux_sel(mul_sel),
                        |
-ncelab: *W,CUVMPW (./GHASH_TOP_DATAPATH.v,19|23): port sizes differ in port connection (1/2).
+ncelab: *W,CUVMPW (./GHASH_TOP_DATAPATH.v,21|23): port sizes differ in port connection (1/2).
               .b(s_reg_data_out_w),
                                 |
-ncelab: *W,CUVMPW (./GHASH_TOP_DATAPATH.v,23|32): port sizes differ in port connection (1/128).
+ncelab: *W,CUVMPW (./GHASH_TOP_DATAPATH.v,25|32): port sizes differ in port connection (1/128).
               .s_out(s_reg_data_out_w));
                                     |
-ncelab: *W,CUVMPW (./GHASH_TOP_DATAPATH.v,48|36): port sizes differ in port connection (1/128).
+ncelab: *W,CUVMPW (./GHASH_TOP_DATAPATH.v,50|36): port sizes differ in port connection (1/128).
 	Building instance overlay tables: .................... Done
 	Generating native compiled code:
 DEFINE gpdk045		$ANALOG/45nm/gpdk045		
@@ -93,40 +88,38 @@ ncvlog_cg: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission den
 DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
 |
 ncvlog_cg: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
-		worklib.ghash_top_datapath:v <0x38e1d473>
-			streams:   0, words:     0
-		worklib.xor_op:v <0x715f82fe>
-			streams:   1, words:   373
+		worklib.tb:v <0x05d84761>
+			streams:  14, words:  8187
 	Building instance specific data structures.
         .mux_sel(mul_sel),
                        |
-ncelab: *W,CSINFI (./GHASH_TOP_DATAPATH.v,19|23): implicit wire has no fanin (ghash_top_datapath.mul_sel).
-              .rst(rst),
-                     |
-ncelab: *W,CSINFI (./GHASH_TOP_DATAPATH.v,27|21): implicit wire has no fanin (ghash_top_datapath.rst).
-ac_reg ac_reg(.clk(clk),
-                     |
-ncelab: *W,CSINFI (./GHASH_TOP_DATAPATH.v,26|21): implicit wire has no fanin (ghash_top_datapath.clk).
+ncelab: *W,CSINFI (./GHASH_TOP_DATAPATH.v,21|23): implicit wire has no fanin (tb.dut.mul_sel).
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
-		              Instances  Unique
-		Modules:              9       9
-		Registers:           11      11
-		Scalar wires:       136       -
-		Expanded wires:     128       1
-		Vectored wires:      12       -
-		Always blocks:        6       6
-		Cont. assignments:    1       3
-	Writing initial simulation snapshot: worklib.ghash_top_datapath:v
+		               Instances  Unique
+		Modules:              10      10
+		Registers:            22      22
+		Scalar wires:        136       -
+		Expanded wires:      128       1
+		Vectored wires:       12       -
+		Always blocks:         7       7
+		Initial blocks:        2       2
+		Cont. assignments:     1       3
+		Pseudo assignments:   11      11
+	Writing initial simulation snapshot: worklib.tb:v
 DEFINE gpdk045		$ANALOG/45nm/gpdk045		
 |
 ncsim: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
 DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
 |
 ncsim: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
-Loading snapshot worklib.ghash_top_datapath:v .................... Done
+Loading snapshot worklib.tb:v .................... Done
 ncsim> source /tools/cadence/INCISIVE152/tools/inca/files/ncsimrc
 ncsim> run
-ncsim: *W,RNQUIE: Simulation is complete.
+====================================
+        GHASH TOP DATAPATH TB       
+====================================
+Simulation complete via $finish(1) at time 80 NS + 0
+./GHASH_TOP_tb.v:76 $finish();
 ncsim> exit
-TOOL:	irun(64)	15.20-s051: Exiting on Apr 10, 2019 at 06:58:18 IST  (total: 00:00:01)
+TOOL:	irun(64)	15.20-s051: Exiting on Apr 10, 2019 at 10:28:36 IST  (total: 00:00:01)

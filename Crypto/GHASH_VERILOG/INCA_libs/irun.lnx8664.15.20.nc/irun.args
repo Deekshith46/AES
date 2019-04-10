@@ -5,3 +5,4 @@
 -access
 +rwc
 GHASH_TOP_DATAPATH.v
+GHASH_TOP_tb.v

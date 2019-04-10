@@ -83,4 +83,4 @@ define VIEW_MAP ( $VIEW_MAP \
 , .SVMS => SVMS \
 )
 define ELAB_SNAPSHOT
-define SNAPSHOT worklib.ghash_top_datapath:v
+define SNAPSHOT worklib.tb_ghash_top:v
